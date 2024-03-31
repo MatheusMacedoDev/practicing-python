@@ -10,7 +10,20 @@ class Rectangle:
         self.height += amount
 
 
+class Square(Rectangle):
+    def __init__(self, size):
+        super().__init__(size, size)
+
+    def addSize(self, amount):
+        self.addWidth(amount)
+        self.addHeight(amount)
+
+
 rec1 = Rectangle()
 rec1.addWidth(3)
 
+sqr1 = Square(2)
+sqr1.addSize(4)
+
 print(vars(rec1))
+print(vars(sqr1))
