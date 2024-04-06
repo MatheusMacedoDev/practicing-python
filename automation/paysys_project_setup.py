@@ -4,13 +4,11 @@ import clipboard
 
 pa.PAUSE = 0.2
 
-time.sleep(1)
-
 pa.press('win')
 pa.write('docker')
 pa.press('enter')
 
-time.sleep(2)
+time.sleep(1)
 
 pa.press('win')
 pa.write('terminal')
@@ -52,7 +50,7 @@ pa.press('d')
 pa.write('tmux new -s Commands')
 pa.press('enter')
 
-time.sleep(2)
+time.sleep(1)
 
 clipboard.copy('docker start ab4f2da4ba1d')
 pa.hotkey('ctrl', 'v')
@@ -61,6 +59,9 @@ pa.press('enter')
 clipboard.copy('docker start 6d50a892ce74')
 pa.hotkey('ctrl', 'v')
 pa.press('enter')
+
+pa.hotkey('alt', 'tab')
+pa.hotkey('alt', 'F4')
 
 pa.hotkey('alt', 'tab')
 pa.hotkey('alt', 'F4')
